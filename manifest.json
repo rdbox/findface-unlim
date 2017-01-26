@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "FindFace Crack PoC",
+    "description": "",
+    "version": "0.0.1",
+    "permissions": ["*://webapi.findface.ru/*", "webRequest", "webRequestBlocking", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["*://findface.ru/*"],
+            "css": ["styles.css"],
+            "js": ["loader.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "content.js"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
