@@ -11,4 +11,5 @@ ul.add-info {
 }
 ul.add-info a {
     color: white;
+    text-decoration: underline;
 }
